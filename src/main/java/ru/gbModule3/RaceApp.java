@@ -18,15 +18,14 @@ public class RaceApp {
         for (int i = 0; i < cars.length; i++) {
             cars[i] = new Car(race, 20 + (int) (Math.random() * 10), barrier);
         }
-        //System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
         for (int i = 0; i < cars.length; i++) {
             new Thread(cars[i]).start();
         }
         try {
             barrier.await();
-            //barrier.wait();
             System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
             barrier.await();
+            //System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
         } catch (Exception e) {
             e.printStackTrace();
         }
