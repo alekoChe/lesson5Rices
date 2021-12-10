@@ -25,7 +25,6 @@ public class RaceApp {
             barrier.await();
             System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
             barrier.await();
-            //System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
         } catch (Exception e) {
             e.printStackTrace();
         }
