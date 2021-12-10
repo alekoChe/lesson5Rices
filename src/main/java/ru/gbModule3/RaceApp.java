@@ -26,15 +26,12 @@ public class RaceApp {
             barrier.await();
             //barrier.wait();
             System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
-            //barrier.notifyAll();
             barrier.await();
-            //barrier.wait();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
         //System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
-        //barrier.notifyAll();
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
     }
 }
